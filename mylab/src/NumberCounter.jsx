@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 
 const NumberCounter = () => {
-  const [counter, setCounter] = useState(0); // Changed 'count' to 'num'
-  const [calculation, setCalculation] = useState(0); // Changed 'calculation' to 'result'
+  const [counter, setCounter] = useState(0);
+  const [calculation, setCalculation] = useState(0); 
 
   useEffect(() => {
-    setCalculation(counter* 2); // Updated calculation based on 'num'
+    setCalculation(counter* 2); 
   }, [counter]);
 
   return (
